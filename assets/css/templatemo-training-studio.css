@@ -611,6 +611,12 @@ header
   .header-area .main-nav .nav li.submenu:hover ul, .header-area .main-nav .nav li.submenu:focus ul {
     height: 0px;
   }
+
+  .custom-number
+  {
+    padding: 30px 0px !important;
+  }
+
 }
 
 @media (min-width: 767px) {
@@ -625,6 +631,11 @@ header
 banner
 --------------------------------------------- 
 */
+
+.custom-number
+{
+  padding: 60px 0px;
+}
 
 .main-banner {
   position: relative;
