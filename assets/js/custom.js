@@ -123,3 +123,17 @@
 
 
 })(window.jQuery);
+
+document.addEventListener('DOMContentLoaded', function () {
+    const sliderItems = document.querySelectorAll('.slider-item');
+    let currentSlide = 0;
+
+    function playNextSlide() {
+        sliderItems[currentSlide].classList.remove('active');
+        currentSlide = (currentSlide + 1) % sliderItems.length;
+        sliderItems[currentSlide].classList.add('active');
+    }
+
+    // Optional: Change slide on interval (e.g., every 5 seconds)
+    setInterval(playNextSlide, 5000);
+});
