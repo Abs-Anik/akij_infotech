@@ -137,3 +137,24 @@ document.addEventListener('DOMContentLoaded', function () {
     // Optional: Change slide on interval (e.g., every 5 seconds)
     setInterval(playNextSlide, 5000);
 });
+document.addEventListener("DOMContentLoaded", function () {
+	// Filter button click event listener
+	const filterButtons = document.querySelectorAll(".filter-button");
+	const articles = document.querySelectorAll(".article");
+
+	filterButtons.forEach(button => {
+		button.addEventListener("click", () => {
+			const filterValue = button.getAttribute("data-filter");
+
+			articles.forEach(article => {
+				const articleOs = article.getAttribute("data-os");
+
+				if (filterValue === "all" || filterValue === articleOs) {
+					article.style.display = "block";
+				} else {
+					article.style.display = "none";
+				}
+			});
+		});
+	});
+});
