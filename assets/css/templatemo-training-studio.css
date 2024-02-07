@@ -617,6 +617,11 @@ header
     padding: 30px 0px !important;
   }
 
+  /* .who-we-are{
+    padding-top: 30px !important;
+    padding-bottom: 10px !important;
+  } */
+
 }
 
 @media (min-width: 767px) {
@@ -636,6 +641,62 @@ banner
 {
   padding: 60px 0px;
 }
+
+.quote {
+  width: 100%;
+  padding: 1rem;
+  background-color: transparentize(#000, .98);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; /* Added to center text within blockquote */
+}
+
+.quote__body {
+  z-index: 1;
+  position: relative;
+  margin: 0;
+  padding: .75rem 2.75rem;
+  font-family: Georgia, serif;
+  font-size: 1.125rem;
+  font-style: italic;
+}
+
+.quote__body::before,
+.quote__body::after {
+  z-index: -1;
+  position: absolute;
+  color: hsl(0, 0, 82.5%);
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.quote__body::before {
+  content: "“";
+  top: 0;
+  left: 0;
+  line-height: 1;
+}
+
+.quote__body::after {
+  content: "”";
+  bottom: 0;
+  right: 0;
+  line-height: 0;
+}
+
+.quote__credits {
+  margin-left: 2.75rem;
+  padding-right: 2.75rem;
+  color: hsl(0, 0, 55%);
+  font-size: .8125rem; /* 13px */
+}
+
+/* .who-we-are{
+  padding: 60px 0px !important;
+} */
 
 .main-banner {
   position: relative;
@@ -753,8 +814,8 @@ subscribe
 */
 
 #call-to-action {
-  padding: 120px 0px;
-  background-image: url(../images/cta-bg.jpg);
+  padding: 60px 0px;
+  /* background-image: url(../images/cta-bg.jpg); */
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
