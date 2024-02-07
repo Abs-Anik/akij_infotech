@@ -137,24 +137,38 @@ document.addEventListener('DOMContentLoaded', function () {
     // Optional: Change slide on interval (e.g., every 5 seconds)
     setInterval(playNextSlide, 5000);
 });
-document.addEventListener("DOMContentLoaded", function () {
-	// Filter button click event listener
-	const filterButtons = document.querySelectorAll(".filter-button");
-	const articles = document.querySelectorAll(".article");
 
-	filterButtons.forEach(button => {
-		button.addEventListener("click", () => {
-			const filterValue = button.getAttribute("data-filter");
-
-			articles.forEach(article => {
-				const articleOs = article.getAttribute("data-os");
-
-				if (filterValue === "all" || filterValue === articleOs) {
-					article.style.display = "block";
-				} else {
-					article.style.display = "none";
-				}
+document.addEventListener("DOMContentLoaded", function() {
+	// Add click event listener to filter buttons
+	var filterButtons = document.querySelectorAll('.filter-button');
+	filterButtons.forEach(function(button) {
+		button.addEventListener('click', function() {
+			// Remove active class from all buttons
+			filterButtons.forEach(function(btn) {
+				btn.classList.remove('active');
 			});
+
+			// Add active class to the clicked button
+			this.classList.add('active');
+
+			var filterValue = this.getAttribute('data-filter');
+			filterTabs(filterValue);
 		});
 	});
+
+	// Function to filter tabs based on data-filter value
+	function filterTabs(filterValue) {
+		var tabs = document.querySelectorAll('.tab-content');
+		tabs.forEach(function(tab) {
+			tab.style.display = 'none';
+		});
+
+		var activeTab = document.getElementById(filterValue);
+		if (activeTab) {
+			activeTab.style.display = 'block';
+		}
+	}
+
+	// Set the default active tab on page load
+	filterTabs('tabs-1');
 });

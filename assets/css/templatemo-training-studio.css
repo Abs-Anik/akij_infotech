@@ -812,6 +812,43 @@ features
 subscribe
 ---------------------------------------------
 */
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 20px; /* Add margin for spacing */
+}
+
+.filter-button {
+  background: none;
+  border: none;
+  color: #000; /* Set the color as per your design */
+  cursor: pointer;
+  font-size: 16px;
+  margin: 0 10px; /* Add margin for spacing between buttons */
+  text-decoration: none;
+  position: relative;
+  padding-top: 15px; /* Add padding-top */
+}
+
+.filter-button.active {
+  color: #1B50AF!important; /* Set the active color */
+  padding-bottom: 7px!important;
+  border-bottom: 2px solid #1B50AF!important;
+}
+
+
+
+.tabs-content {
+  text-align: center;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content img {
+  max-width: 100%;
+  height: auto;
+}
 
 #call-to-action {
   padding: 60px 0px;
