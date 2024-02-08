@@ -139,36 +139,36 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-	// Add click event listener to filter buttons
-	var filterButtons = document.querySelectorAll('.filter-button');
-	filterButtons.forEach(function(button) {
-		button.addEventListener('click', function() {
-			// Remove active class from all buttons
-			filterButtons.forEach(function(btn) {
-				btn.classList.remove('active');
-			});
+    // Add click event listener to filter buttons
+    var filterButtons = document.querySelectorAll('.filter-button');
+    filterButtons.forEach(function(button) {
+        button.addEventListener('click', function() {
+            // Remove active class from all buttons
+            filterButtons.forEach(function(btn) {
+                btn.classList.remove('active');
+            });
 
-			// Add active class to the clicked button
-			this.classList.add('active');
+            // Add active class to the clicked button
+            this.classList.add('active');
 
-			var filterValue = this.getAttribute('data-filter');
-			filterTabs(filterValue);
-		});
-	});
+            var filterValue = this.getAttribute('data-filter');
+            filterTabs(filterValue);
+        });
+    });
 
-	// Function to filter tabs based on data-filter value
-	function filterTabs(filterValue) {
-		var tabs = document.querySelectorAll('.tab-content');
-		tabs.forEach(function(tab) {
-			tab.style.display = 'none';
-		});
+    // Function to filter tabs based on data-filter value
+    function filterTabs(filterValue) {
+        var tabs = document.querySelectorAll('.tab-content');
+        tabs.forEach(function(tab) {
+            tab.style.display = 'none';
+        });
 
-		var activeTab = document.getElementById(filterValue);
-		if (activeTab) {
-			activeTab.style.display = 'block';
-		}
-	}
+        var activeTabs = document.querySelectorAll('.' + filterValue);
+        activeTabs.forEach(function(tab) {
+            tab.style.display = 'block';
+        });
+    }
 
-	// Set the default active tab on page load
-	filterTabs('tabs-1');
+    // Set the default active tab on page load
+    filterTabs('tabs-1');
 });
