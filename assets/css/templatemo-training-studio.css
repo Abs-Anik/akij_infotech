@@ -622,6 +622,10 @@ header
     padding-bottom: 10px !important;
   } */
 
+  .filter-button {
+    margin: 0 3px!important;
+  }
+
 }
 
 @media (min-width: 767px) {
