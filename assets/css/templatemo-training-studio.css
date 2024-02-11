@@ -90,12 +90,12 @@ body {
 }
 
 ::selection {
-  background: #ed563b;
+  background: #1B50AF;
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #ed563b;
+  background: #1B50AF;
   color: #fff;
 }
 
@@ -472,6 +472,22 @@ header
   display: none; /* Hide the mobile logo by default */
 }
 
+.solutionsProduct p{
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 24.5vh;
+  box-sizing: border-box;
+  margin: 0;
+  background-color: #F5F9FF;
+}
+
+.solutionsProduct p:hover{
+  background-color: #cdcad9;
+  color:#1B50AF;
+  font-weight:bold;
+}
+
 /* Media query for screen sizes below 768px */
 @media (max-width: 767px) {
   #desktop-logo {
@@ -624,6 +640,35 @@ header
 
   .filter-button {
     margin: 0 3px!important;
+  }
+
+  #solutionsProductSmallScreen{
+    padding-right: 0px!important;
+    padding-left: 0px!important;
+  }
+
+  body .customizeSolutionScreen_first {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+
+  body .customizeSolutionScreen {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  body .firstSolutionProduct{
+    margin-left:0px !important;
+  }
+
+  body .customizeSolutionScreen_Padding{
+    /* padding: 15px !important; */
+  }
+
+  body .customizeSolutionScreen_P{
+    margin-left:15px !important;
+    margin-right:15px !important;
+
   }
 
 }
@@ -999,10 +1044,10 @@ schedule
 
 #schedule {
   padding: 0px 0px 140px 0px;
-  background-image: url(../images/schedule-bg.jpg);
+  /* background-image: url(../images/schedule-bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 #schedule table {
