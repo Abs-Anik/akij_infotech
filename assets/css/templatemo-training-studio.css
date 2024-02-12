@@ -653,8 +653,8 @@ header
   }
 
   body .customizeSolutionScreen {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   body .firstSolutionProduct{
@@ -669,6 +669,18 @@ header
     margin-left:15px !important;
     margin-right:15px !important;
 
+  }
+
+  body .solutinSecondRowImg{
+    margin-left: 0px!important;
+    padding-right: 0px!important;
+    padding-left: 0px!important;
+  }
+
+  body .customizeSolutionScreen_second{
+    padding-right: 15px!important;
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
 }
@@ -814,6 +826,18 @@ banner
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+}
+
+.largeScreenSolution{
+  margin-left: 0px!important;
+  padding-right: 0px!important;
+}
+
+.customizeSolutionLargeScreen_second{
+  padding-right: 0px!important;
+}
+.customizeSolutionLargeScreen_secondTwo{
+  padding-right: 1px!important;
 }
 /*
 ---------------------------------------------
@@ -1043,7 +1067,7 @@ schedule
 */
 
 #schedule {
-  padding: 0px 0px 140px 0px;
+  padding: 0px 0px 70px 0px;
   /* background-image: url(../images/schedule-bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
