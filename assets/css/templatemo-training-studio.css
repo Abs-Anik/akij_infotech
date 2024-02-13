@@ -691,7 +691,12 @@ header
   body .customizeSolutionScreen_P{
     margin-left:15px !important;
     margin-right:15px !important;
+  }
 
+  body .customizeServiceScreen_P{
+    margin-left:15px !important;
+    margin-right:15px !important;
+    font-size:10px;
   }
 
   body .solutinSecondRowImg{
