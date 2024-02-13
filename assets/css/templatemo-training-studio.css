@@ -727,6 +727,9 @@ header
   body .mobileScreenFooter{
     margin-top: 20px !important;
   }
+  .footer-number{
+    padding: 0px 0px;
+  }
 
 }
 
@@ -898,6 +901,10 @@ banner
 
 .hrClass{
   border-bottom: 0.5px solid #fff;
+}
+
+.footer-number{
+  padding:15px 0px;
 }
 
 /*
