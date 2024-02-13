@@ -724,6 +724,10 @@ header
     margin-bottom: 10px!important;
   }
 
+  body .mobileScreenFooter{
+    margin-top: 20px !important;
+  }
+
 }
 
 
@@ -890,6 +894,10 @@ banner
 .img-4,
 .img-5 {
     display: none;
+}
+
+.hrClass{
+  border-bottom: 0.5px solid #fff;
 }
 
 /*
