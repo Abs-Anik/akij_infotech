@@ -665,6 +665,11 @@ header
     padding-left: 0px!important;
   }
 
+  #serviceProductSmallScreen{
+    padding-right: 0px!important;
+    padding-left: 0px!important;
+  }
+
   body .customizeSolutionScreen_first {
     margin-top: 0px;
     margin-bottom: 30px;
@@ -881,6 +886,7 @@ banner
 .img-5 {
     display: none;
 }
+
 /*
 ---------------------------------------------
 features
