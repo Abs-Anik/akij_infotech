@@ -391,6 +391,10 @@ h6,
     box-shadow: 0px 0px 40px #DDDDDD;
 }
 
+.testimonial-custom-color{
+    background: #eaf0f9 !important;
+}
+
 .testimonial-carousel .owl-item.center .testimonial-item h4 {
     color:#fff;
 }
