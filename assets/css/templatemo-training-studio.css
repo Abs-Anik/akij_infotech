@@ -464,6 +464,8 @@ header
   object-fit: cover;
 }
 
+
+
 #desktop-logo {
   display: inline; /* Show the desktop logo by default */
 }
@@ -731,6 +733,25 @@ header
     padding: 0px 0px;
   }
 
+  body .contact-center{
+    margin: auto;
+    width: 39%;
+    border: 2px solid #bcbdc0;
+    margin-top: 4px;
+  }
+
+  body .custom-header-video{
+    margin-top: 75px!important;
+  }
+
+  body .video-overlay{
+    top: 78px !important;
+  }
+
+  body #akij-group-story{
+    margin-top: 30px!important;
+  }
+
 }
 
 
@@ -822,8 +843,21 @@ banner
     z-index: -1;
 }
 
+#header-video{
+  min-width: 100%;
+  min-height: 40vh;
+  max-width: 100%;
+  max-height: 40vh;
+  object-fit: cover;
+  z-index: -1;
+}
+
 #bg-video::-webkit-media-controls {
     display: none !important;
+}
+
+#header-video::-webkit-media-controls {
+  display: none !important;
 }
 
 .video-overlay {
@@ -833,6 +867,15 @@ banner
     left: 0;
     bottom: 7px;
     width: 100%;
+}
+
+.section-video-overlay{
+  position: absolute;
+  background-color: rgba(35,45,57,0.6);
+  top: 0;
+  left: 0;
+  bottom: 7px;
+  width: 100%;
 }
 
 .main-banner .caption {
@@ -906,7 +949,12 @@ banner
 .footer-number{
   padding:15px 0px;
 }
-
+.contact-center{
+  margin: auto;
+  width: 10%;
+  border: 2px solid #bcbdc0;
+  margin-top: 4px;
+}
 /*
 ---------------------------------------------
 features
