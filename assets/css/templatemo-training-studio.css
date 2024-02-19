@@ -747,6 +747,13 @@ header
     margin-top: 4px;
   }
 
+  body .blog-detail-center{
+    margin: auto;
+    width: 44%;
+    border: 2px solid #bcbdc0;
+    margin-top: 4px;
+  }
+
   body .custom-header-video{
     margin-top: 75px!important;
   }
@@ -990,6 +997,13 @@ banner
 .blog-center{
   margin: auto;
   width: 6%;
+  border: 2px solid #bcbdc0;
+  margin-top: 4px;
+}
+
+.blog-detail-center{
+  margin: auto;
+  width: 11%;
   border: 2px solid #bcbdc0;
   margin-top: 4px;
 }
