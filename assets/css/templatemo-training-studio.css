@@ -752,8 +752,20 @@ header
     margin-top: 30px!important;
   }
 
-  body .custom-flex-none{
-    display: block!important;
+  body .services .box .box {
+    margin-bottom: 20px;
+  }
+
+  body .services .box .icon {
+    float: none;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+  body .services .box h4,
+  body .services .box p {
+    margin-left: 0;
+    text-align: center;
   }
 
 }
@@ -960,52 +972,64 @@ banner
   margin-top: 4px;
 }
 
-.services .icon-box {
-  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
-  padding: 50px 30px;
-  transition: all ease-in-out 0.4s;
+.services {
+  padding: 80px 0;
+  background: #f3f3f3;
+  padding-bottom: 85px;
+}
+
+.services .box {
+  padding: 40px;
+  box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
   background: #fff;
+  transition: 0.4s;
+  height: 100%;
 }
 
-.services .icon-box .icon {
-  margin-bottom: 10px;
+.services .box:hover {
+  box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+  transform: translateY(-10px);
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
 }
 
-.services .icon-box .icon i {
-  color: #1B50AF;
-  font-size: 36px;
-  transition: 0.3s;
+.services .box .icon {
+  float: left;
 }
 
-.services .icon-box h4 {
-  font-weight: 500;
+.services .box .icon i {
+  color: #444;
+  font-size: 64px;
+  transition: 0.5s;
+  line-height: 0;
+  margin-top: 34px;
+}
+
+.services .box .icon i:before {
+  background: #1B50AF;
+  /* background: linear-gradient(45deg, #367bbf 0%, #a3ebd5 100%); */
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.services .box h4 {
+  margin-left: 100px;
+  font-weight: 700;
   margin-bottom: 15px;
-  font-size: 24px;
-}
-
-.services .icon-box h4 a {
-  color: #37517e;
-  transition: ease-in-out 0.3s;
   font-size: 22px;
 }
 
-.services .icon-box p {
-  line-height: 24px;
+.services .box h4 a {
+  color: #444;
+}
+
+.services .box p {
   font-size: 14px;
+  margin-left: 100px;
   margin-bottom: 0;
+  line-height: 24px;
 }
-
-.services .icon-box:hover {
-  transform: translateY(-10px);
-}
-
-.services .icon-box:hover h4 a {
-  color: #47b2e4;
-}
-.services .icon-box ul li {
-  list-style-type: square !important;
-}
-
 .companyKeyPoint{
   margin-left: 18px;
 }
