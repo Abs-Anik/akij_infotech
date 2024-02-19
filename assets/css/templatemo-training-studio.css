@@ -740,6 +740,13 @@ header
     margin-top: 4px;
   }
 
+  body .blog-center{
+    margin: auto;
+    width: 22%;
+    border: 2px solid #bcbdc0;
+    margin-top: 4px;
+  }
+
   body .custom-header-video{
     margin-top: 75px!important;
   }
@@ -766,6 +773,14 @@ header
   body .services .box p {
     margin-left: 0;
     text-align: center;
+  }
+
+  body .customSearchOne{
+    display:block!important;
+  }
+
+  body .customSearchTwo{
+    display:none!important;
   }
 
 }
@@ -972,6 +987,13 @@ banner
   margin-top: 4px;
 }
 
+.blog-center{
+  margin: auto;
+  width: 6%;
+  border: 2px solid #bcbdc0;
+  margin-top: 4px;
+}
+
 .services {
   padding: 80px 0;
   background: #f3f3f3;
@@ -1126,6 +1148,63 @@ banner
 
 .team .member .social a + a {
   margin-left: 8px;
+}
+
+.bg-custom-color{
+  background-color: #EEF9FF !important;
+  color: #1B50AF!important;
+}
+
+.bg-primary {
+  background-color: #06A3DA !important;
+}
+.text-white {
+  color: #fff !important;
+}
+
+.rounded-end {
+  border-top-right-radius: 2px !important;
+  border-bottom-right-radius: 2px !important;
+}
+
+.py-2 {
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+}
+.px-4 {
+  padding-right: 1.5rem !important;
+  padding-left: 1.5rem !important;
+}
+.mt-5 {
+  margin-top: 3rem !important;
+}
+.start-0 {
+  left: 0 !important;
+}
+.top-0 {
+  top: 0 !important;
+}
+
+.position-absolute {
+  position: absolute !important;
+}
+
+.bg-primary-custom{
+  background-color: #1B50AF;
+}
+
+.text-custom-gray{
+  color: #a7b5c2;
+}
+
+.btn-outline-info-custom{
+  border-color: #1B50AF;
+}
+
+.btn-outline-info-custom:hover{
+  background-color: #1B50AF;
+  color: #FFFFFF!important;
+
 }
 
 /*

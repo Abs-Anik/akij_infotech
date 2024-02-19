@@ -350,10 +350,6 @@ h6,
 
 
 /*** Testimonial ***/
-.customColor{
-    padding-left:15px;
-}
-
 .testimonial-carousel .owl-dots {
     margin-top: 15px;
     display: flex;
@@ -374,7 +370,7 @@ h6,
 
 .testimonial-carousel .owl-dot.active {
     width: 30px;
-    background: #1B50AF;
+    background: var(--primary);
 }
 
 .testimonial-carousel .owl-item.center {
@@ -387,29 +383,9 @@ h6,
 }
 
 .testimonial-carousel .owl-item.center .testimonial-item {
-    background: #1B50AF !important;
-    box-shadow: 0px 0px 40px #DDDDDD;
+    background: #FFFFFF !important;
+    box-shadow: 0 0 30px #DDDDDD;
 }
-
-.testimonial-custom-color{
-    background: #eaf0f9 !important;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-item h4 {
-    color:#fff;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-item p {
-    color:#fff;
-}
-
-.testimonial-carousel .owl-item.center .testimonial-item .customColor {
-    color:#fff;
-    padding-left:15px;
-}
-
-
-
 
 
 /*** Team ***/
@@ -491,8 +467,8 @@ h6,
 .back-to-top {
     position: fixed;
     display: none;
-    right: 8px;
-    bottom: 22px;
+    right: 45px;
+    bottom: 45px;
     z-index: 99;
 }
 
