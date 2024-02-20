@@ -1220,6 +1220,43 @@ banner
   color: #FFFFFF!important;
 
 }
+.card-header .title {
+  font-size: 17px;
+  color: #7a7a7a;
+}
+.card-header .accicon {
+float: right;
+font-size: 20px;  
+width: 1.2em;
+}
+.card-header{
+cursor: pointer;
+border-bottom: none;
+}
+.card{
+border: 1px solid #ddd;
+}
+.card-body{
+border-top: 1px solid #ddd;
+}
+.card-header:not(.collapsed) .rotate-icon {
+transform: rotate(180deg);
+}
+.card-header{
+  background-color: #d1d9e7;
+  color: #6e81a3;
+}
+.card-header.collapsed {
+  background-color: #ffffff!important;
+}
+
+.card-header.collapsed:hover {
+  background-color: #d1d9e7!important;
+}
+
+.card-header:active {
+  cursor: pointer;
+}
 
 /*
 ---------------------------------------------
