@@ -782,6 +782,13 @@ header
     margin-top: 4px;
   }
 
+  body .product-center{
+    margin: auto;
+    width: 35%;
+    border: 2px solid #bcbdc0;
+    margin-top: 4px;
+  }
+
 
   body .custom-header-video{
     margin-top: 75px!important;
@@ -1065,6 +1072,13 @@ banner
   margin-top: 4px;
 }
 
+.product-center{
+  margin: auto;
+  width: 9%;
+  border: 2px solid #bcbdc0;
+  margin-top: 4px;
+}
+
 .services {
   padding: 80px 0;
   background: #f3f3f3;
@@ -1328,6 +1342,64 @@ transform: rotate(180deg);
   transform: scale(1.1);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3) !important; 
 }
+
+.product-img {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.product-img span{
+  color: #ffffff;
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.neon-border {
+  color: #ffffff;
+  border: 2px solid #1B50AF;
+  padding: 8px 16px;
+  position: relative;
+  display: inline-block;
+}
+
+.neon-border:before,
+.neon-border:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.neon-border:before {
+  box-shadow: 0 0 10px rgba(27, 80, 175, 0.8), 0 0 20px rgba(27, 80, 175, 0.6), 0 0 30px rgba(27, 80, 175, 0.4);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.neon-border:after {
+  border: 2px solid rgba(27, 80, 175, 0.5);
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.neon-border:hover {
+  color: #ffffff; /* Change text color to white on hover */
+}
+
+.neon-border:hover:before,
+.neon-border:hover:after {
+  opacity: 1;
+}
+
 
 /*
 ---------------------------------------------
