@@ -614,7 +614,7 @@ header
   }
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
-    color: #ed563b!important;
+    color: #1B50AF!important;
   }
   .header-area .main-nav .nav li.submenu ul {
     position: relative;
@@ -796,6 +796,31 @@ header
     margin-top: 4px;
   }
 
+  body .hightlight-center{
+    margin: auto;
+    width: 40%;
+    border: 2px solid #bcbdc0;
+    margin-top: 4px;
+  }
+
+  body .management-center{
+    margin: auto;
+    width: 70%;
+    border: 2px solid #bcbdc0;
+    margin-top: 4px;
+  }
+
+  body .supIcon a i {
+    font-size:15px!important;
+  }
+
+  body .management-name{
+    font-size: 19px!important;
+  }
+
+  body .management-img{
+    max-width: 100%!important;
+  }
 
   body .custom-header-video{
     margin-top: 75px!important;
@@ -1093,6 +1118,24 @@ banner
   margin-top: 4px;
 }
 
+.hightlight-center{
+  margin: auto;
+  width: 10%;
+  border: 2px solid #bcbdc0;
+  margin-top: 4px;
+}
+
+.management-center{
+  margin: auto;
+  width: 18%;
+  border: 2px solid #bcbdc0;
+  margin-top: 4px;
+}
+
+.management-img{
+  max-width: 70%!important;
+}
+
 .services {
   padding: 80px 0;
   background: #f3f3f3;
@@ -1220,7 +1263,7 @@ banner
   justify-content: flex-start;
 }
 
-.team .member .social a {
+.team .member .social .social-icon {
   transition: ease-in-out 0.3s;
   display: flex;
   align-items: center;
@@ -1231,21 +1274,21 @@ banner
   background: #eff2f8;
 }
 
-.team .member .social a i {
+.team .member .social .social-icon i {
   color: #37517e;
   font-size: 16px;
   margin: 0 2px;
 }
 
-.team .member .social a:hover {
+.team .member .social .social-icon:hover {
   background: #47b2e4;
 }
 
-.team .member .social a:hover i {
+.team .member .social .social-icon:hover i {
   color: #fff;
 }
 
-.team .member .social a + a {
+.team .member .social .social-icon + .social-icon {
   margin-left: 8px;
 }
 
