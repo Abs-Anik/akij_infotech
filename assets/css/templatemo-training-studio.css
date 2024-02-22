@@ -789,6 +789,13 @@ header
     margin-top: 4px;
   }
 
+  body .solution-cat-center{
+    margin: auto;
+    width: 58%;
+    border: 2px solid #bcbdc0;
+    margin-top: 4px;
+  }
+
 
   body .custom-header-video{
     margin-top: 75px!important;
@@ -1075,6 +1082,13 @@ banner
 .product-center{
   margin: auto;
   width: 9%;
+  border: 2px solid #bcbdc0;
+  margin-top: 4px;
+}
+
+.solution-cat-center{
+  margin: auto;
+  width: 15%;
   border: 2px solid #bcbdc0;
   margin-top: 4px;
 }
